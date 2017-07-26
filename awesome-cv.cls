@@ -555,6 +555,30 @@
   \vspace{2mm}
 }
 
+% Define an environment for pubentry
+\newenvironment{pubentries}{%
+  \vspace{\acvSectionContentTopSkip}
+  \begin{center}
+}{%
+  \end{center}
+}
+
+% Define an entry of publication information
+% Usage: \cventry{<title>}{<authors>}{<journal>}{<issue>}{<year>}
+\newcommand*{\pubentry}[5]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm} }
+    {\entrytitlestyle{#1} & \begin{tabular}[t]{r} \entrylocationstyle{#3} \\ \entrydatestyle{#4} \hspace{0.2em} \entrydatestyle{|} \hspace{0.2em} \entrydatestyle{#5} \end{tabular} \\
+     \entrypositionstyle{#2}}
+    %\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+  \end{tabular*}%
+  \vspace{1em}
+}
+
+
+
 % Define an environment for cventry
 \newenvironment{cventries}{%
   \vspace{\acvSectionContentTopSkip}
