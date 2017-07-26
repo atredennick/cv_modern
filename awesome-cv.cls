@@ -570,11 +570,12 @@
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm} }
-    {\entrytitlestyle{#1} & \begin{tabular}[t]{r} \entrylocationstyle{#3} \\ \entrydatestyle{#4} \hspace{0.2em} \entrydatestyle{|} \hspace{0.2em} \entrydatestyle{#5} \end{tabular} \\
-     \entrypositionstyle{#2}}
+    {\begin{tabular*}{\textwidth}{ @{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm} } \entrytitlestyle{#1} \\ 
+        \entrypositionstyle{#2} \end{tabular*} & \begin{tabular}{r} \entrylocationstyle{#3} \\ 
+            \entrydatestyle{#4} \hspace{0.2em} \entrydatestyle{|} \hspace{0.2em} \entrydatestyle{#5} \end{tabular} }
     %\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
-  \vspace{1em}
+  %\vspace{1em}
 }
 
 
