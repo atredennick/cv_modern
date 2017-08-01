@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.7.10)  26 JUL 2017 11:00
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.7.10)  1 AUG 2017 16:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1528,8 +1528,8 @@ Try to go on, since this might almost work.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.18     {In review}
-                     % Year
+l.18     {In revision}
+                       % Year
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
@@ -1539,11 +1539,16 @@ Overfull \hbox (128.0374pt too wide) in paragraph at lines 18--18
 []|  
  []
 
+
+Overfull \hbox (11.48651pt too wide) in paragraph at lines 18--18
+ []
+ []
+
 ! Missing { inserted.
 <inserted text> 
                 {
-l.18     {In review}
-                     % Year
+l.18     {In revision}
+                       % Year
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
